@@ -63,7 +63,7 @@
 
 .debug section .container .row {
     min-width: 100%;
-    height: 400px;
+    min-height: 400px;
     background-color: #cc77289f;
     display: flex;
 }
@@ -86,9 +86,51 @@
     background-color: #797bf7;
 }
 
+.debug #site_footer {
+    background-color: blue;
+    min-height: 400px;
+}
+
+.debug #site_footer .container{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.debug #site_footer .container .row{
+    min-height: 300px;
+    width: 100%;
+    background-color: #bdbdbd;
+    display: flex;
+    align-items: center;
+}
+
+.debug #site_footer .container .row .col-4,
+.debug #site_footer .container .row .col-2 {
+    min-height: 250px;
+}
+
+.debug #site_footer .container .row .col-4 {
+    background-color: rgb(141, 255, 141);
+}
+
+.debug #site_footer .container .row .col-2 {
+    background-color: rgb(255, 212, 133);
+}
+
+.debug #site_footer .final-row {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bdbdbd;
+
+}
 
 
 /* #endregion debug */
+
 
 .col-2 {
     width: calc(100%/12 * 2);
