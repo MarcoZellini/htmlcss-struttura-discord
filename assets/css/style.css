@@ -4,3 +4,55 @@
     box-sizing: border-box;
 }
 
+/* #region debug */
+
+.debug .container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+    background-color: orange;
+}
+
+.debug #site_header .container {
+    min-height: 80px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.debug #site_header .container .row {
+    background-color: rgb(255, 112, 112);
+    min-height: 40px;
+    display: flex;
+    width: 100%;
+}
+
+.debug .col-2, .debug .col-8 {
+    min-height: 100%;
+    border: 1px dashed black;
+}
+
+.debug .hero {
+    background-color: rgba(94, 94, 250, 0.459);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.debug .hero .container {
+    min-height: 300px;
+    border: 1px dotted black;
+    background-color: lightgrey;
+}
+
+/* #endregion debug */
+
+.col-2 {
+    width: calc(100%/12 * 2);
+}
+
+.col-8 {
+    width: calc(100%/12 * 8);
+}
