@@ -10,7 +10,7 @@
     max-width: 1170px;
     width: 80%;
     margin: auto;
-    background-color: orange;
+    background-color: rgb(255, 202, 102);
 }
 
 .debug #site_header .container {
@@ -29,12 +29,15 @@
     width: 100%;
 }
 
-.debug .col-2, .debug .col-8 {
+.debug .col-2,
+.debug .col-4,
+.debug .col-8 {
     min-height: 100%;
     border: 1px dashed black;
 }
 
 .debug .hero {
+    margin: 0 auto;
     background-color: rgba(94, 94, 250, 0.459);
     min-height: 400px;
     display: flex;
@@ -47,10 +50,52 @@
     background-color: lightgrey;
 }
 
+.debug section {
+    margin: 3rem auto;
+}
+
+.debug section .container {
+    min-height: 500px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.debug section .container .row {
+    min-width: 100%;
+    height: 400px;
+    background-color: #cc77289f;
+    display: flex;
+}
+
+.debug section .container .row .col-8,
+.debug section .container .row .col-4 {
+    background-color: rgb(149, 247, 149);
+}
+
+.debug section .container .row .col-4,
+.debug section .container .row .col-8 {
+    min-height: 300px;
+    margin: 1rem 0;
+}
+
+.debug section .container .row .card {
+    min-width: calc(100%-2rem);
+    min-height: 250px;
+    margin: 2rem;
+    background-color: #797bf7;
+}
+
+
+
 /* #endregion debug */
 
 .col-2 {
     width: calc(100%/12 * 2);
+}
+
+.col-4 {
+    width: calc(100%/12 * 4);
 }
 
 .col-8 {
